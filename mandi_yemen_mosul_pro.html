@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#10100d">
+<title>مندي اليمن | الموصل</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap');
+:root{--bg:#0c0d0b;--surface:#151713;--surface2:#1c1e19;--gold:#d5a84a;--gold2:#f0cc72;--cream:#f8f1df;--muted:#b8b09f;--line:#ffffff12;--green:#5f8a56}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--cream);font-family:Cairo,Tahoma,sans-serif}
+a{text-decoration:none;color:inherit}.container{width:min(1180px,92%);margin:auto}
+.topbar{background:#0a0b09;border-bottom:1px solid var(--line);font-size:13px;color:#cfc6b4}.topbar .container{display:flex;justify-content:space-between;gap:15px;padding:9px 0}
+header{position:relative;min-height:720px;display:flex;align-items:center;overflow:hidden;background:linear-gradient(90deg,#080906eF 0%,#080906a8 48%,#08090645),url('https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=2000&q=88') center/cover}
+header:after{content:"";position:absolute;inset:auto 0 0;height:170px;background:linear-gradient(transparent,var(--bg));pointer-events:none}
+.nav{position:absolute;z-index:5;top:0;left:0;right:0;background:#08090655;backdrop-filter:blur(10px);border-bottom:1px solid #ffffff14}.nav .container{height:78px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:22px;font-weight:900;color:var(--gold2)}.brand small{display:block;font-size:10px;letter-spacing:2px;color:#eee8d9;font-weight:600}.links{display:flex;gap:25px;color:#eee8d9;font-size:14px}.links a:hover{color:var(--gold2)}
+.hero{position:relative;z-index:2;max-width:690px;padding-top:60px}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--gold2);font-weight:800;font-size:14px}.dot{width:7px;height:7px;border-radius:50%;background:var(--gold)}h1{font-family:"Playfair Display",serif;font-size:clamp(55px,9vw,105px);line-height:.95;margin:18px 0;color:#fff8e9;letter-spacing:-2px}.hero h2{font-size:20px;color:var(--gold2);margin:0 0 16px}.hero p{font-size:17px;line-height:2;color:#eee6d7;max-width:600px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{border:1px solid #ffffff22;border-radius:9px;padding:13px 22px;font-weight:800;cursor:pointer}.gold{background:var(--gold);color:#17130b}.dark{background:#ffffff0d;color:white}.mini-info{display:flex;gap:22px;flex-wrap:wrap;margin-top:28px;color:#d7cfbf;font-size:13px}.mini-info span{display:flex;gap:7px;align-items:center}
+
+section{padding:85px 0}.heading{text-align:center;margin-bottom:38px}.kicker{color:var(--gold);font-weight:900;font-size:13px;letter-spacing:1px}.heading h2{font-family:"Playfair Display",serif;font-size:43px;margin:8px 0}.heading p{color:var(--muted);margin:0}
+.categories{display:flex;gap:10px;overflow:auto;padding-bottom:8px;margin-bottom:30px;scrollbar-width:none}.categories button{white-space:nowrap;border:1px solid var(--line);background:var(--surface);color:#eee;padding:11px 18px;border-radius:30px;font-family:inherit;font-weight:700;cursor:pointer}.categories button.active{background:var(--gold);color:#17130b;border-color:var(--gold)}
+.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.dish{background:linear-gradient(145deg,#1b1d18,#121410);border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:.25s}.dish:hover{transform:translateY(-4px);border-color:#d5a84a55}.dish-img{height:190px;background-size:cover;background-position:center;position:relative}.tag{position:absolute;top:13px;right:13px;background:#111cdd;color:#fff0bd;border:1px solid #d5a84a55;padding:5px 9px;border-radius:20px;font-size:11px;font-weight:800}.dish-body{padding:18px}.dish-body h3{margin:0 0 7px;font-size:19px}.dish-body p{color:var(--muted);font-size:13px;line-height:1.8;min-height:48px;margin:0}.dish-foot{display:flex;align-items:center;justify-content:space-between;margin-top:16px}.price{color:var(--gold2);font-size:20px;font-weight:900}.add{border:0;background:var(--gold);color:#17130b;width:42px;height:42px;border-radius:10px;font-size:22px;cursor:pointer;font-weight:900}
+
+.feature{background:linear-gradient(90deg,#191b16,#11130f);border-block:1px solid var(--line)}.feature-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}.feature h2{font-family:"Playfair Display",serif;font-size:44px;margin:8px 0 16px}.feature p{color:var(--muted);line-height:2}.checks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}.check{padding:14px;border:1px solid var(--line);border-radius:12px;background:#ffffff05;font-weight:700}.feature-photo{min-height:420px;border-radius:22px;background:url('https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?auto=format&fit=crop&w=1000&q=85') center/cover;border:1px solid #ffffff15}
+
+.branches{display:grid;grid-template-columns:1fr 1fr;gap:18px}.branch{padding:28px;border:1px solid var(--line);background:var(--surface);border-radius:18px}.branch h3{margin-top:0}.branch p{color:var(--muted);line-height:1.9}.branch a{color:var(--gold2);font-weight:800}
+
+footer{border-top:1px solid var(--line);padding:45px 0;color:var(--muted)}.footer-grid{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}.footer-brand{color:var(--gold2);font-size:24px;font-weight:900}.float-cart{position:fixed;z-index:20;left:20px;bottom:20px;border:0;background:var(--gold);color:#17130b;border-radius:50px;padding:14px 19px;font-family:inherit;font-weight:900;box-shadow:0 15px 40px #0009;cursor:pointer}.count{background:#17130b;color:white;border-radius:50%;padding:2px 7px;margin-right:5px}
+.modal{display:none;position:fixed;z-index:50;inset:0;background:#000c;align-items:flex-end;justify-content:center}.modal.open{display:flex}.sheet{width:min(680px,100%);max-height:88vh;overflow:auto;background:#181a15;border:1px solid #ffffff15;border-radius:24px 24px 0 0;padding:25px}.sheet-head{display:flex;justify-content:space-between;align-items:center}.close{background:none;border:0;color:white;font-size:30px;cursor:pointer}.cart-row{display:flex;justify-content:space-between;padding:15px 0;border-bottom:1px solid var(--line)}.checkout{width:100%;margin-top:18px;padding:15px;border:0;border-radius:12px;background:#278a51;color:white;font-family:inherit;font-weight:900;cursor:pointer}.empty{color:var(--muted);padding:30px;text-align:center}
+@media(max-width:850px){.links{display:none}.menu-grid{grid-template-columns:1fr 1fr}.feature-grid{grid-template-columns:1fr}.feature-photo{min-height:300px}.branches{grid-template-columns:1fr}}
+@media(max-width:560px){header{min-height:650px}.topbar .container{justify-content:center}.topbar .hide-mobile{display:none}.menu-grid{grid-template-columns:1fr}.hero{padding-top:75px}.hero p{font-size:15px}.actions .btn{width:100%;text-align:center}.checks{grid-template-columns:1fr}section{padding:65px 0}.heading h2,.feature h2{font-size:35px}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="container"><span>الموصل • الأكلات اليمنية والخليجية</span><span class="hide-mobile">يوميًا 12:00 ظهرًا — 11:00 مساءً</span></div></div>
+<header>
+<nav class="nav"><div class="container"><a class="brand" href="#">مندي اليمن<small>YEMENI MANDI</small></a><div class="links"><a href="#menu">المنيو</a><a href="#story">قصتنا</a><a href="#branches">الفروع</a><a href="#contact">تواصل</a></div><a class="btn dark" href="#menu">اطلب الآن</a></div></nav>
+<div class="container"><div class="hero"><div class="eyebrow"><span class="dot"></span> نكهة يمنية أصيلة في الموصل</div><h1>مندي<br>على أصوله</h1><h2>طعم يجمع العائلة حول السفرة.</h2><p>مندي، مظبي، حنيذ، مدفون ومنسف — أطباق بطابع يمني وخليجي، محضّرة لتوصل لك تجربة المطعم من أول لقمة.</p><div class="actions"><a class="btn gold" href="#menu">اكتشف المنيو ↓</a><a class="btn dark" href="tel:+9647700335500">اتصل بالمطعم</a></div><div class="mini-info"><span>📍 حي نركال</span><span>📍 حي العربي</span><span>⏱ 12:00 — 23:00</span></div></div></div>
+</header>
+
+<section id="menu"><div class="container"><div class="heading"><div class="kicker">OUR MENU</div><h2>اختيارات من المطبخ</h2><p>المنيو يعرض أصنافًا وأسعارًا منشورة حاليًا للمطعم/سلسلة مندي اليمن.</p></div><div class="categories" id="cats"></div><div class="menu-grid" id="grid"></div></div></section>
+
+<section class="feature" id="story"><div class="container feature-grid"><div><div class="kicker">THE YEMENI TABLE</div><h2>سفرة لها حكاية</h2><p>المندي مو مجرد وجبة؛ هو رز معطر، لحم أو دجاج، ونكهة تتجمع حولها العائلة. صممنا هذه التجربة الرقمية بروح مطاعم المندي الحديثة، مع تركيز على الطلب السريع والوصول للمنيو بسهولة.</p><div class="checks"><div class="check">✓ منيو واضح</div><div class="check">✓ طلب سريع</div><div class="check">✓ فروع الموصل</div><div class="check">✓ مناسب للموبايل</div></div></div><div class="feature-photo"></div></div></section>
+
+<section id="branches"><div class="container"><div class="heading"><div class="kicker">FIND US</div><h2>فروعنا في الموصل</h2><p>اختر الفرع الأقرب لك.</p></div><div class="branches"><div class="branch"><h3>حي العربي</h3><p>مقابل معمل الألبان — الموصل</p><a href="tel:+9647700335500">0770 033 5500</a></div><div class="branch"><h3>حي نركال</h3><p>بالقرب من جامع هيبة خاتون — الموصل</p><a href="tel:+9647700335500">0770 033 5500</a></div></div></div></section>
+
+<footer id="contact"><div class="container footer-grid"><div><div class="footer-brand">مندي اليمن</div><div>نكهة يمنية وخليجية في الموصل.</div></div><div><b>للطلب والاستفسار</b><br><a href="tel:+9647700335500">0770 033 5500</a></div><div>© 2026 مندي اليمن — نموذج موقع تجريبي</div></div></footer>
+
+<button class="float-cart" onclick="openCart()">🛒 السلة <span class="count" id="count">0</span></button>
+<div class="modal" id="modal" onclick="if(event.target===this)closeCart()"><div class="sheet"><div class="sheet-head"><h2>سلة الطلب</h2><button class="close" onclick="closeCart()">×</button></div><div id="cart"></div><div class="price" id="total"></div><button class="checkout" onclick="sendOrder()">إرسال الطلب عبر واتساب</button></div></div>
+
+<script>
+const dishes=[
+["المندي","نصف مندي دجاج","15000","نصف دجاجة مندي، رز مندي، مرق، مخلل، سحاوق وجاجيك.","https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?auto=format&fit=crop&w=800&q=80","الأكثر طلبًا"],
+["المندي","مندي دجاجة كاملة","29000","دجاجة كاملة، رز مندي، مرق، مخلل، سحاوق وجاجيك.","https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80",""],
+["المندي","مندي لحم","24000","وجبة لحم مندي مع رز مندي والمرق والمخلل والسحاوق والجاجيك.","https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80","الأكثر طلبًا"],
+["المندي","ضلع مندي","42000","كيلو ضلع مندي بالتنور مع رز مندي والمرق والمخلل والسحاوق.","https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80",""],
+["المنسف","مكس مندي","37000","تشكيلة من المندي بطابع عائلي مع الرز والمرفقات.","https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=800&q=80",""],
+["المنسف","منسف مشكل","60000","نصف دجاجة مندي، لحم مندي، لحم حنيذ وصينية رز ومرفقات.","https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80","عائلي"],
+["المنسف","منسف مندي دجاجتين","54000","دجاجتان مندي مع صينية رز والمرق والمخلل والسحاوق والجاجيك.","https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80","عائلي"],
+["الكبسة","كبسة دجاج كاملة","24000","دجاج كبسة مع الرز والمرق والمخلل والسحاوق والجاجيك.","https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=80",""],
+["الكبسة","نصف كبسة دجاج","12000","نصف دجاجة كبسة مطبوخة مع الرز والمرفقات.","https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=80",""],
+["الأطباق الشرقية","نصف عدني دجاج","14000","رز ودجاج مع صلصة حارة ومرقة الفاصوليا ولبن بالنعناع.","https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",""],
+["الأطباق الشرقية","مسبوك لحم","26000","لحم مطبوخ بالتنور بصلصة خاصة مع رز مندي ومرفقات.","https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80",""],
+["المقبلات","مقبلات صغير","4000","طبق مقبلات مشكلة مناسب لشخص واحد.","https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=800&q=80",""],
+["المقبلات","مقبلات وسط","6000","طبق مقبلات مشكلة مناسب لشخصين.","https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=800&q=80",""],
+["المقبلات","مقبلات كبير","8000","طبق مقبلات مشكلة مناسب للعائلة.","https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=800&q=80",""],
+["الطلبات الجانبية","رز مندي","6000","طبق رز مندي يقدم مع المرق والمخلل والسحاوق والجاجيك.","https://images.unsplash.com/photo-1516685018646-549198525c1b?auto=format&fit=crop&w=800&q=80",""],
+["الطلبات الجانبية","كاسة مرق","2000","مرق الفاصوليا والصلصة الحمراء.","https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",""],
+["المشروبات","لبن مدخن","1000","لبن بارد مناسب مع أطباق المندي.","https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80",""]
+];
+const cats=["الكل",...new Set(dishes.map(x=>x[0]))];
+const catsEl=document.getElementById("cats"),grid=document.getElementById("grid");
+cats.forEach((c,i)=>{const b=document.createElement("button");b.textContent=c;b.className=i===0?"active":"";b.onclick=()=>{document.querySelectorAll(".categories button").forEach(x=>x.classList.remove("active"));b.classList.add("active");render(c)};catsEl.appendChild(b)});
+function render(cat="الكل"){const list=cat==="الكل"?dishes:dishes.filter(x=>x[0]===cat);grid.innerHTML=list.map((d)=>`<article class="dish"><div class="dish-img" style="background-image:url('${d[4]}')">${d[5]?`<span class="tag">${d[5]}</span>`:""}</div><div class="dish-body"><h3>${d[1]}</h3><p>${d[3]}</p><div class="dish-foot"><span class="price">${Number(d[2]).toLocaleString("ar-IQ")} د.ع</span><button class="add" onclick="add(${dishes.indexOf(d)})">+</button></div></div></article>`).join("")}
+let cart=[];
+function add(i){cart.push(dishes[i]);update();openCart()}
+function update(){document.getElementById("count").textContent=cart.length;document.getElementById("cart").innerHTML=cart.length?cart.map(d=>`<div class="cart-row"><span>${d[1]}</span><b>${Number(d[2]).toLocaleString("ar-IQ")} د.ع</b></div>`).join(""):`<div class="empty">السلة فارغة — أضف طبقك المفضل 🍽️</div>`;document.getElementById("total").textContent="المجموع: "+cart.reduce((a,d)=>a+Number(d[2]),0).toLocaleString("ar-IQ")+" د.ع"}
+function openCart(){document.getElementById("modal").classList.add("open");update()}function closeCart(){document.getElementById("modal").classList.remove("open")}
+function sendOrder(){if(!cart.length)return;const total=cart.reduce((a,d)=>a+Number(d[2]),0);const text="السلام عليكم، أريد طلب:%0A"+cart.map(d=>"• "+d[1]+" — "+Number(d[2]).toLocaleString("en-US")+" د.ع").join("%0A")+"%0Aالمجموع: "+total.toLocaleString("en-US")+" د.ع";window.open("https://wa.me/9647700335500?text="+text,"_blank")}
+render();
+</script>
+</body>
+</html>
